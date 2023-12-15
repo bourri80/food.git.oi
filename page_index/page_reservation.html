@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <link href="../style_css/style2.css" rel="stylesheet" type="text/css">
+
+    
+</head>
+<body >
+    <form action="#" method="POST" name="reservation">
+<h2>For Reservation</h2>
+        <div class="box">
+            
+            <div class="part1">
+                <div class="inputbox">
+                    <input type="tel" name="num" required>
+                    <label>num Telephone</label>
+                </div>
+                <div class="inputbox">
+                    <input type="email" name="mail" required>
+                    <label>Adresse Email</label>
+                </div>
+                <div class="inputbox">
+                    <input type="time" name="paas" required>
+                    <label> Reservation Time</label>
+                </div>
+                
+                <input type="submit" id="b1" value="confirm your reservation" onsubmit="" >
+            </div>
+            
+            <div class="part2">
+                <div class="inputbox">
+                    <input type="text" required name="nom">
+                    <label >Name</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required name="prenom">
+                    <label>Family Name</label>
+                </div>
+                <div class="inputbox">
+                    <label>Reservation Date</label>
+                    <input type="date" required name="date" id="date">
+                   
+                </div>
+                <div class="radio" style="color: #fff;">
+                    <label>How many person will you be with?</label><br>
+                    <input type="radio" name="s1" value="s1">1<br>
+                    <input type="radio" name="s1" value="s2">2<br>
+                    <input type="radio" name="s1" value="s3">3
+                </div>
+                <div class="inpu">
+                    <label style="color: #fff;">Notes</label>
+                    <textarea id="description" name="description" ></textarea>
+                <button  class="b2" id="b2" value="annuler" onclick="annulerRedirection()">annuler</button>
+
+                </div>
+            </div>
+               
+        </form>
+    </div>
+
+    <script src="../javascript/reserve.js"></script>
+</body>
+</html>
